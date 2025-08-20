@@ -2,13 +2,18 @@
 This is code for a RL-Agent Based model in In-Play Betting on a Sports Betting Exchange dissertation.
 It is the extended version from Multi-threaded BBE (Bristol Betting Exchange) integrated with Opinion Dynamics Platform (https://github.com/Guzelyte/TBBE_OD).
 This version integrated an agent called RLBettingAgent to the original betting_agents.py file in the Application folder. 
+
 Basic steps for running the BBE (Bristol Betting Exchange):
+
 Step 1: In config.py initialize the agents list.
 Example of agents list:
 agents = [('Agent_Opinionated_Random', 10), ('Agent_Opinionated_Leader_Wins', 10), ('Agent_Opinionated_Underdog', 10), ('Agent_Opinionated_Back_Favourite', 10), ('Agent_Opinionated_Linex', 10), ('Agent_Opinionated_Priviledged', 5), ('RLBettingAgent', 5)]
 These will be the agents that the system uses when running the simulation.
+
 Step 2: In systems_constant.py define parameters and settings of the simulations.
+
 Example of parameters in systems_constant.py:
+
 General
 NUM_OF_SIMS = 1
 NUM_OF_COMPETITORS = 5
@@ -16,13 +21,16 @@ NUM_OF_EXCHANGES = 1
 PRE_RACE_BETTING_PERIOD_LENGTH = 0
 IN_PLAY_CUT_OFF_PERIOD = 0
 SESSION_SPEED_MULTIPLIER = 1
+
 Exchange Attributes
 MIN_ODDS = 1.1
 MAX_ODDS = 20.00
+
 Event Attributes
 RACE_LENGTH = 500
 MIN_RACE_LENGTH = 400
 MAX_RACE_LENGTH = 4000
+
 Step 3: Run the session by running the TBBE.py file.
 
 
